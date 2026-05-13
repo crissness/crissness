@@ -75,20 +75,20 @@ gantt
   axisFormat %H:%M
 
   section Morning
-    Colazione & meditazione     :07:30, 90m
+    Breakfast & meditation      :07:30, 90m
 
   section Work
     Audit & analysis            :09:00, 240m
 
   section Break
-    Libro & pranzo              :crit, 13:00, 60m
+    Reading & lunch             :crit, 13:00, 60m
 
   section Work
     Valuation Lab & deep work   :14:00, 240m
 
   section Evening
-    Palestra                    :18:00, 60m
-    Progetti personali          :19:00, 120m
-    Cena                        :crit, 21:00, 60m
+    Gym                         :18:00, 60m
+    Personal projects           :19:00, 120m
+    Dinner                      :crit, 21:00, 60m
 ```
 
