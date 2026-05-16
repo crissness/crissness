@@ -34,7 +34,7 @@ Surname        ░░░░░░░░░░  Panza
 Role           ░░░░░░░░░░  Auditor & Builder
 Currently      ░░░░░░░░░░  Building Valuation Lab — DCF/WACC modeling platform
 Methodology    ░░░░░░░░░░  Damodaran
-Random facts   ░░░░░░░░░░  Italian, 110L/110, gym every day, morning meditator
+Random facts   ░░░░░░░░░░  Italian, healthy lifestyle, avid reader, music lover & festival-goer
 ```
 
 ---
@@ -77,13 +77,13 @@ gantt
   section Morning
     Breakfast & meditation      :07:30, 90m
 
-  section Work
+  section Morning work
     Audit & analysis            :09:00, 240m
 
   section Break
-    Reading & lunch             :crit, 13:00, 60m
+    Book & lunch                :crit, 13:00, 60m
 
-  section Work
+  section Afternoon work
     Valuation Lab & deep work   :14:00, 240m
 
   section Evening
