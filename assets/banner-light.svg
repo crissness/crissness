@@ -3,12 +3,13 @@
     @keyframes rev { from{clip-path:inset(0 100% 0 0)} to{clip-path:inset(0 0% 0 0)} }
     @keyframes fi  { from{opacity:0} to{opacity:1} }
     @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    @keyframes movecur { to{transform:translateX(349px)} }
     .logo { opacity:0; animation:fi 0.5s 0.1s forwards }
     .divider { opacity:0; animation:fi 0.3s 0.55s forwards }
     .n { clip-path:inset(0 100% 0 0); animation:rev 1.6s 0.7s cubic-bezier(0.4,0,0.2,1) both }
     .r { clip-path:inset(0 100% 0 0); animation:rev 1.0s 2.5s ease both }
     .s { clip-path:inset(0 100% 0 0); animation:rev 0.8s 3.7s ease both }
-    .cur { animation:blink 0.45s 2.4s 3 forwards }
+    .cur { animation:movecur 1.6s 0.7s cubic-bezier(0.4,0,0.2,1) forwards, blink 0.45s 2.4s 3 forwards }
   </style>
 
   <rect width="800" height="170" fill="#f0f4f7"/>
@@ -28,7 +29,7 @@
     font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
     font-size="46" font-weight="700" fill="#09293D" letter-spacing="-0.5">Cristian Panza</text>
 
-  <rect class="cur" x="534" y="41" width="3" height="40" fill="#3ab85a" rx="1"/>
+  <rect class="cur" x="185" y="41" width="3" height="40" fill="#3ab85a" rx="1"/>
 
   <text class="r" x="185" y="107"
     font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
