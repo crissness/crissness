@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 170" width="800" height="170">
+  <defs>
+    <clipPath id="cn" clipPathUnits="userSpaceOnUse">
+      <rect x="185" y="45" height="65" width="0">
+        <animate attributeName="width" from="0" to="630" dur="1.8s" begin="0.7s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="cr" clipPathUnits="userSpaceOnUse">
+      <rect x="185" y="110" height="28" width="0">
+        <animate attributeName="width" from="0" to="630" dur="0.9s" begin="2.7s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="cs" clipPathUnits="userSpaceOnUse">
+      <rect x="185" y="138" height="24" width="0">
+        <animate attributeName="width" from="0" to="630" dur="0.8s" begin="3.8s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="800" height="170" fill="#09293D"/>
+
+  <g transform="translate(37, 47) scale(1.8)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.1s" fill="freeze"/>
+    <polygon points="0,0 10,0 24,28 14,28" fill="#ffffff" opacity="0.9"/>
+    <polygon points="4,0 10,0 24,28 18,28" fill="#b0c8d8" opacity="0.65"/>
+    <polygon points="48,0 38,0 24,28 34,28" fill="#ffffff" opacity="0.9"/>
+    <polygon points="44,0 38,0 24,28 30,28" fill="#b0c8d8" opacity="0.65"/>
+    <polygon points="14,28 34,28 24,42" fill="#63D779"/>
+    <polygon points="20,28 28,28 24,36" fill="#7ee890"/>
+  </g>
+
+  <rect x="170" y="25" width="1.5" height="120" fill="#63D779" opacity="0">
+    <animate attributeName="opacity" from="0" to="0.4" dur="0.3s" begin="0.5s" fill="freeze"/>
+  </rect>
+
+  <text x="185" y="100"
+    font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+    font-size="46" font-weight="700" fill="#ffffff" letter-spacing="-0.5"
+    clip-path="url(#cn)">Cristian Panza</text>
+
+  <rect x="185" y="50" width="3" height="50" fill="#63D779" rx="1">
+    <animate attributeName="x" from="185" to="550" dur="1.8s" begin="0.7s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;1;0;1;0;1;0;0" keyTimes="0;0.7;0.75;0.82;0.87;0.93;0.97;1" dur="1.4s" begin="2.5s" fill="freeze"/>
+  </rect>
+
+  <text x="185" y="129"
+    font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+    font-size="12" font-weight="500" fill="#63D779" letter-spacing="4"
+    clip-path="url(#cr)">AUDITOR  ·  BUILDER</text>
+
+  <text x="185" y="153"
+    font-family="'Courier New',Courier,monospace"
+    font-size="11" fill="#6a8fa0"
+    clip-path="url(#cs)">&#9658; Building Valuation Lab — DCF/WACC modeling platform</text>
+</svg>

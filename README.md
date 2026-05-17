@@ -3,8 +3,8 @@
 -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/ascii-dark.gif">
-  <img src="assets/ascii-light.gif" alt="ASCII portrait" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img src="assets/banner-light.svg" alt="Cristian Panza" width="100%">
 </picture>
 
 <p align="center">
@@ -84,7 +84,7 @@ gantt
     Book & lunch                :crit, 13:00, 60m
 
   section Afternoon work
-    Valuation Lab & deep work   :14:00, 240m
+    Audit & analysis   :14:00, 240m
 
   section Evening
     Gym                         :18:00, 60m
