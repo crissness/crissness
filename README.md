@@ -7,6 +7,9 @@
   <img src="assets/banner-light.svg" alt="Cristian Panza" width="100%">
 </picture>
 
+<br/>
+<br/>
+
 <p align="center">
 <a href="https://www.linkedin.com/in/cristianpanza"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 </p>

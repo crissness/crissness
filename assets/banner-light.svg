@@ -1,26 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 170" width="800" height="170">
-  <defs>
-    <clipPath id="cn" clipPathUnits="userSpaceOnUse">
-      <rect x="185" y="45" height="65" width="0">
-        <animate attributeName="width" from="0" to="630" dur="1.8s" begin="0.7s" fill="freeze"/>
-      </rect>
-    </clipPath>
-    <clipPath id="cr" clipPathUnits="userSpaceOnUse">
-      <rect x="185" y="110" height="28" width="0">
-        <animate attributeName="width" from="0" to="630" dur="0.9s" begin="2.7s" fill="freeze"/>
-      </rect>
-    </clipPath>
-    <clipPath id="cs" clipPathUnits="userSpaceOnUse">
-      <rect x="185" y="138" height="24" width="0">
-        <animate attributeName="width" from="0" to="630" dur="0.8s" begin="3.8s" fill="freeze"/>
-      </rect>
-    </clipPath>
-  </defs>
+  <style>
+    @keyframes rev { from{clip-path:inset(0 100% 0 0)} to{clip-path:inset(0 0% 0 0)} }
+    @keyframes fi  { from{opacity:0} to{opacity:1} }
+    @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    .logo { opacity:0; animation:fi 0.5s 0.1s forwards }
+    .divider { opacity:0; animation:fi 0.3s 0.55s forwards }
+    .n { clip-path:inset(0 100% 0 0); animation:rev 1.6s 0.7s cubic-bezier(0.4,0,0.2,1) both }
+    .r { clip-path:inset(0 100% 0 0); animation:rev 1.0s 2.5s ease both }
+    .s { clip-path:inset(0 100% 0 0); animation:rev 0.8s 3.7s ease both }
+    .cur { animation:blink 0.45s 2.4s 3 forwards }
+  </style>
 
   <rect width="800" height="170" fill="#f0f4f7"/>
 
-  <g transform="translate(37, 47) scale(1.8)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.1s" fill="freeze"/>
+  <g class="logo" transform="translate(37,47) scale(1.8)">
     <polygon points="0,0 10,0 24,28 14,28" fill="#09293D"/>
     <polygon points="4,0 10,0 24,28 18,28" fill="#0d3650" opacity="0.8"/>
     <polygon points="48,0 38,0 24,28 34,28" fill="#09293D"/>
@@ -29,27 +22,19 @@
     <polygon points="20,28 28,28 24,36" fill="#63D779"/>
   </g>
 
-  <rect x="170" y="25" width="1.5" height="120" fill="#3ab85a" opacity="0">
-    <animate attributeName="opacity" from="0" to="0.5" dur="0.3s" begin="0.5s" fill="freeze"/>
-  </rect>
+  <rect class="divider" x="170" y="25" width="1.5" height="120" fill="#3ab85a" opacity="0.5"/>
 
-  <text x="185" y="100"
+  <text class="n" x="185" y="78"
     font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
-    font-size="46" font-weight="700" fill="#09293D" letter-spacing="-0.5"
-    clip-path="url(#cn)">Cristian Panza</text>
+    font-size="46" font-weight="700" fill="#09293D" letter-spacing="-0.5">Cristian Panza</text>
 
-  <rect x="185" y="50" width="3" height="50" fill="#3ab85a" rx="1">
-    <animate attributeName="x" from="185" to="550" dur="1.8s" begin="0.7s" fill="freeze"/>
-    <animate attributeName="opacity" values="1;1;0;1;0;1;0;0" keyTimes="0;0.7;0.75;0.82;0.87;0.93;0.97;1" dur="1.4s" begin="2.5s" fill="freeze"/>
-  </rect>
+  <rect class="cur" x="534" y="41" width="3" height="40" fill="#3ab85a" rx="1"/>
 
-  <text x="185" y="129"
+  <text class="r" x="185" y="107"
     font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
-    font-size="12" font-weight="500" fill="#1a7a3a" letter-spacing="4"
-    clip-path="url(#cr)">AUDITOR  ·  BUILDER</text>
+    font-size="12" font-weight="500" fill="#1a7a3a" letter-spacing="4">AUDITOR  ·  BUILDER</text>
 
-  <text x="185" y="153"
+  <text class="s" x="185" y="128"
     font-family="'Courier New',Courier,monospace"
-    font-size="11" fill="#4a6878"
-    clip-path="url(#cs)">&#9658; Building Valuation Lab — DCF/WACC modeling platform</text>
+    font-size="11" fill="#4a6878">&#9658; Building Valuation Lab — DCF/WACC modeling platform</text>
 </svg>
